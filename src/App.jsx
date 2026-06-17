@@ -254,12 +254,10 @@ export default function Portfolio() {
           <div className="mx-auto max-w-5xl">
             <SectionTitle eyebrow="Experience" title="Practical exposure and teamwork" />
             <Card className="p-8 shadow-xl">
-              <h3 className="text-2xl font-bold">Intern – UDAAN Society</h3>
-              <p className="mt-1 text-sky-600">January 2026 – Present</p>
+              <h3 className="text-2xl font-bold">Web Development Intern – UDAAN Society</h3>
+              <p className="mt-1 text-sky-600">January 2026 – March 2026</p>
               <p className="mt-5 leading-8 text-slate-700 dark:text-slate-300">
-                Assisted in organizing events, managing social media activities, and maintaining records.
-                Collaborated with team members to execute community initiatives and improved communication,
-                teamwork, and project coordination skills.
+               Worked as a Web Development Intern at UDAAN Society, contributing to website development, content management, and project coordination. Collaborated with teams to improve digital solutions while strengthening technical and professional skills.
               </p>
             </Card>
           </div>
