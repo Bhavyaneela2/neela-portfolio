@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const profile = {
   name: "Neela Bhavya Sri",
-  title: "B.Tech CSE (AI & ML) Student | Web Developer | AI/ML Enthusiast",
+  title: "AI & ML Undergraduate | Web Developer | Machine Learning & Automation Enthusiast",
   location: "Hyderabad, Telangana, India",
   email: "bhavyasrineela11@gmail.com",
   phone: "+91 8096480779",
@@ -12,14 +12,15 @@ const profile = {
   image: "myphoto.jpeg",
 };
 
-const navItems = ["Home", "About", "Skills", "Experience", "Projects", "Certifications", "Education", "Contact"];
+const navItems = ["Home", "About", "Skills", "Experience", "Projects", "Certifications", "Achievements", "Education", "Contact"];
 
 const skills = [
-  { group: "Programming", icon: "💻", items: ["Python", "Java"] },
-  { group: "Frontend", icon: "✨", items: ["HTML", "CSS", "JavaScript", "React"] },
-  { group: "Database", icon: "🗄️", items: ["SQL", "MySQL"] },
-  { group: "Tools", icon: "🛠️", items: ["VS Code", "Git", "Eclipse", "Basic n8n"] },
-  { group: "Professional", icon: "🤝", items: ["Communication", "Collaboration", "Leadership", "Quick Learner"] },
+  { group: "Programming", icon: "💻", items: ["Python", "Java", "SQL"] },
+  { group: "Web Technologies", icon: "✨", items: ["HTML", "CSS", "JavaScript", "React"] },
+  { group: "AI/ML", icon: "🤖", items: ["Machine Learning", "TensorFlow", "OpenCV"] },
+  { group: "Database", icon: "🗄️", items: ["PostgreSQL"] },
+  { group: "Tools", icon: "🛠️", items: ["VS Code", "Git", "GitHub", "Eclipse", "n8n", "Figma"] },
+  { group: "Professional", icon: "🤝", items: ["Communication", "Collaboration", "Leadership"] },
 ];
 
 const projects = [
@@ -27,6 +28,11 @@ const projects = [
     title: "Navy Hydroacoustic Surveillance System",
     stack: "Python, AI/ML, OpenCV, Acoustic Signal Processing, Computer Vision",
     desc: "Developed an automated multi-modal naval surveillance system that analyzes underwater acoustic signals and sea-surface images for intelligent maritime threat detection. The system divides sea regions into zones and assigns real-time threat intensity levels such as LOW, MEDIUM, and HIGH using AI-driven analysis. Interactive maps, heatmaps, and visual alerts help naval personnel identify high-risk areas quickly and improve defense response efficiency.",
+  },
+    {
+  title: "WanderGo – AI-Powered Travel Planning Platform",
+  stack: "React, JavaScript, Python, SQL, Machine Learning, Generative AI",
+  desc: "Built a full-stack travel planning platform that provides AI-driven destination recommendations, personalized itineraries, and intelligent trip planning assistance.",
   },
 
   {
@@ -39,16 +45,17 @@ const projects = [
     stack: "HTML, CSS, JavaScript, Python",
     desc: "Developed a healthcare web application that provides personalized nutrition recommendations for expecting mothers. Built an intuitive interface for data input and visualization to support maternal health insights.",
   },
+
 ];
 
 const certifications = [
   "Google AI/ML Virtual Internship – Eduskills",
-  "Salesforce AgentForce Specialist – Salesforce",
-  "Blockchain Certification – Blockchain Developer IDS",
-  "Cisco CCNA Enterprise, Networking, Security and Automation",
+  "PwC Launchpad – Advisory Program",
+  "PwC Job Simulation Experience Program",
   "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+  "Salesforce AgentForce Specialist",
   "GenAI in Data Analytics – Meta & Infosys SpringBoard",
-  "Selected for National Level Smart India Hackathon",
+  "Cisco CCNA Enterprise, Networking, Security and Automation",
 ];
 
 const fadeUp = {
@@ -133,11 +140,10 @@ export default function Portfolio() {
               </h1>
 
               <p className="mt-4 text-xl font-semibold text-slate-700 dark:text-slate-200">{profile.title}</p>
-              <p className="mt-3 font-medium text-sky-600 dark:text-sky-300">Web Developer • AI/ML Learner • Problem Solver</p>
+              <p className="mt-3 font-medium text-sky-600 dark:text-sky-300">AI/ML Enthusiast • Web Developer • Problem Solver</p>
 
               <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                Passionate about building impactful digital solutions using modern web technologies, AI concepts,
-                and database-driven applications.
+                AI & ML undergraduate with experience in Python, Java, SQL, React, and TensorFlow. Passionate about building innovative solutions and applying Artificial Intelligence to solve real-world challenges.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -156,13 +162,24 @@ export default function Portfolio() {
                 </a>
               </div>
 
-              <div className="mt-7 flex gap-4">
-                <a href={profile.linkedin} target="_blank" className="rounded-full border px-4 py-3 font-semibold hover:text-sky-500">
+              <div className="mt-7 flex gap-4 flex-wrap">
+                <a href={profile.linkedin} target="_blank" rel="noreferrer" className="rounded-full border px-4 py-3 font-semibold hover:text-sky-500">
                   LinkedIn
                 </a>
-                <a href={profile.github} target="_blank" className="rounded-full border px-4 py-3 font-semibold hover:text-sky-500">
+
+                <a href={profile.github} target="_blank" rel="noreferrer" className="rounded-full border px-4 py-3 font-semibold hover:text-sky-500">
                   GitHub
                 </a>
+
+                <a
+                  href="https://leetcode.com/u/TA2JxPt9yb/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border px-4 py-3 font-semibold hover:text-sky-500"
+                >
+                  LeetCode
+                </a>
+
                 <a href={`mailto:${profile.email}`} className="rounded-full border px-4 py-3 font-semibold hover:text-sky-500">
                   Email
                 </a>
@@ -192,7 +209,7 @@ export default function Portfolio() {
                 <div className="space-y-4 rounded-2xl bg-slate-50 p-5 dark:bg-slate-800/60">
                   <p>🎓 CMR Technical Campus</p>
                   <p>📘 B.Tech | CSE (AI & ML)</p>
-                  <p>📊 GPA – 8.43</p>
+                  <p>📊 GPA – 8.46</p>
                   <p>📍 {profile.location}</p>
                   <p>✉️ {profile.email}</p>
                   <p>📞 {profile.phone}</p>
@@ -269,6 +286,33 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
+                <section id="achievements" className="bg-slate-50 px-4 py-20 dark:bg-slate-900/40 md:px-8">
+          <div className="mx-auto max-w-7xl">
+            <SectionTitle
+              eyebrow="Achievements"
+              title="Milestones and accomplishments"
+            />
+
+            <div className="grid gap-4 md:grid-cols-2">
+              <Card className="p-6">
+                🏆 Selected for National Level Smart India Hackathon 2025
+              </Card>
+
+              <Card className="p-6">
+                💻 Solved 50+ LeetCode Problems in DSA
+              </Card>
+
+              <Card className="p-6">
+                🚀 Built 3+ AI/ML & Web Development Projects
+              </Card>
+
+              <Card className="p-6">
+                🎓 Completed Google AI/ML Virtual Internship through Eduskills
+              </Card>
+            </div>
+          </div>
+        </section>
+        
 
         <section id="education" className="bg-slate-50 px-4 py-20 dark:bg-slate-900/40 md:px-8">
           <div className="mx-auto max-w-5xl">
@@ -276,7 +320,7 @@ export default function Portfolio() {
             <Card className="p-8 shadow-xl">
               <h3 className="text-2xl font-bold">B.Tech in CSE (AI & ML)</h3>
               <p className="mt-2 text-lg">CMR Technical Campus, Medchal</p>
-              <p className="mt-2 text-sky-600">GPA: 8.43 | Year of Passing: 2027</p>
+              <p className="mt-2 text-sky-600">GPA: 8.63 | Year of Passing: 2027</p>
             </Card>
           </div>
         </section>
