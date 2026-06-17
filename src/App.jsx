@@ -154,6 +154,14 @@ export default function Portfolio() {
 >
                ⬇️ Download Resume
                     </a>
+                <a
+                  href="resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full bg-sky-500 px-6 py-3 font-semibold text-white hover:bg-sky-600"
+                >
+                  📄 View Resume
+                </a>
                 <a href="#contact" className="rounded-full border border-slate-300 px-6 py-3 font-semibold hover:text-sky-500">
                   Contact Me
                 </a>
